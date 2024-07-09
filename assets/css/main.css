@@ -1276,5 +1276,56 @@ section,
 # Starter Section Section
 --------------------------------------------------------------*/
 .starter-section {
-  /* Add your styles here */
+  .starter-section {
+    transition: background-color 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition for background color and transform */
+  }
+  
+  /* Optional hover effect for better interaction */
+  .starter-section:hover {
+    background-color: #e9ecef; /* Slightly darker grey on hover */
+    transform: scale(1.05); /* Slightly enlarge the section on hover */
+  }
+  
+}
+
+/* Add this to the end of your existing CSS file */
+
+/* About Section */
+#about .container {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+#about .container[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+#about .container[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#about .container img {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+#about .container img[data-aos="fade-up"] {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+#about .container img[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Add this to the end of your existing CSS file */
+
+.starter-section {
+  transition: background-color 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition for background color and transform */
+}
+
+.starter-section:hover {
+  background-color: #e9ecef; /* Slightly darker grey on hover */
+  transform: scale(1.05); /* Slightly enlarge the section on hover */
 }
